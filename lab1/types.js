@@ -1,4 +1,4 @@
-const values = [true, "hello", 5, 12, false, "word", 3.14, true, -20, "JavaScript", false];
+const values = [true, "hello", 5, 12, false, "world", 1000000000, "true", true, 1010, "Ira", -20, "JavaScript", false, "c++", "Italy"];
 
 const types = {
     number: 0,
