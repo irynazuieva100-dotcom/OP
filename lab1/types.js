@@ -23,7 +23,6 @@ for (const val of values) {
     if (typess[l] === undefined) {
          typess[l] = 0;
     }
-
     typess[l] += 1;
 }
 
