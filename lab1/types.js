@@ -6,25 +6,25 @@ const types = {
     boolean: 0
 };
 
-for (const value of values) {
-    const type = typeof value;
-    types[type] = types[type] + 1;
+for (const val of values) {
+    const l = typeof val;
+    types[l] += 1;
 }
 
 console.log("Підрахунок з готовими ключами:");
 console.log(types);
 
-const dynamicTypes = {};
+const typess = {};
 
-for (const value of values) {
-    const type = typeof value;
+for (const val of values) {
+    const l = typeof val;
 
-    if (dynamicTypes[type] === undefined) {
-        dynamicTypes[type] = 0;
+    if (typess[l] === undefined) {
+         typess[l] = 0;
     }
 
-    dynamicTypes[type] = dynamicTypes[type] + 1;
+    typess[l] += 1;
 }
 
 console.log("Підрахунок з динамічними ключами:");
-console.log(dynamicTypes);
+console.log(typess);
