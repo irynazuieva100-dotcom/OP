@@ -3,7 +3,6 @@ function num(n) {
 }
 const a=5;
 const b=num(a);
-
 console.log("Число:");
 console.log("a =", a);
 console.log("b =", b);
