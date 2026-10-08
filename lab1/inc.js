@@ -1,8 +1,8 @@
 function num(n) {
     return n+1;
 }
-const a=5;
-const b=num(a);
+const a = 5;
+const b = num(a);
 console.log("Число:");
 console.log("a =", a);
 console.log("b =", b);
