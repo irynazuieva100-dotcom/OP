@@ -8,12 +8,11 @@ console.log("Число:");
 console.log("a =", a);
 console.log("b =", b);
 
-function incObject(ch) {
-    ch.n = ch.n + 1;
+
+function summ (ch) {
+    ch.n +=1;
 }
-
 const obj = { n: 5 };
-incObject(obj);
-
+summ(obj);
 console.log("Об'єкт:");
 console.log(obj);
