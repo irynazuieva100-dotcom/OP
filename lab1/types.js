@@ -14,11 +14,12 @@ for (const val of values) {
 console.log("Підрахунок з готовими ключами:");
 console.log(types);
 
+
 const typess = {};
-
 for (const val of values) {
+    
     const l = typeof val;
-
+    
     if (typess[l] === undefined) {
          typess[l] = 0;
     }
