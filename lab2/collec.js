@@ -13,4 +13,17 @@ function phone(name) {
     return undefined;
 }
 
-console.log(phone("Ira"));
+console.log(phone("Anna"));
+
+const hash = {
+    Ira: "+380000000001",
+    Anna: "+380000000002",
+    Katy: "+380000000003"
+};
+
+function phone2(name) {
+    return hash[name];
+}
+
+console.log(phone2("Ira"));
+
