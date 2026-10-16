@@ -1,6 +1,6 @@
-const iface = {
+const obj = {
   m1: x => [x],
-
+  
   m2: function (x, y) {
     return [x, y];
   },
@@ -10,10 +10,10 @@ const iface = {
   }
 };
 
-function introspect(object) {
-  return Object.keys(object)
-    .filter(key => typeof object[key] === 'function')
-    .map(key => [key, object[key].length]);
+function intr(object) {
+  return Object.keys(obj)
+    .filter(key => typeof obj[key] === 'function')
+    .map(key => [key, obj[key].length]);
 }
 
-console.log('Introspection:', introspect(iface));
+console.log('Introspection:', intr(obj));
