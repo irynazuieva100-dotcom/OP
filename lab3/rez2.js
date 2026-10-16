@@ -1,14 +1,10 @@
-function generateKey(length, characters) {
-  let key = '';
-
-  for (let i = 0; i < length; i++) {
-    const index = random(characters.length - 1);
-    key += characters[index];
+function gen(len, ch) {
+  let k = '';
+  for (let i=0; i<len; i++) {
+    const ind = random(characters.len - 1);
+    k += ch[ind];
   }
-
-  return key;
+  return k;
 }
-
-const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
-
-console.log('Key:', generateKey(16, characters));
+const ch = 'abcdefghijklmnopqrstuvwxyz0123456789';
+console.log('Key:', gen(16, ch));
