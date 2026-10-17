@@ -3,7 +3,7 @@ function random(max) {
 }
 function gen(len, ch) {
     let k = '';
-    for (let i = 0; i < len; i++) {
+    for (let i=0; i<len; i++) {
         const ind = random(ch.length - 1);
         k += ch[ind];
     }
