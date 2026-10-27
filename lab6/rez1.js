@@ -20,4 +20,3 @@ const cube = x => x ** 3;
 
 console.log(pipe(inc, twice, cube)(5));
 console.log(pipe(inc, inc)(7));
-
