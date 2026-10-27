@@ -5,13 +5,8 @@ function array() {
         return mas[i];
     }
 
-    get.push = function(value) {
-        return mas.push(value);
-    };
-
-    get.pop = function() {
-        return mas.pop();
-    };
+    get.push = value => mas.push(value);
+    get.pop = () => mas.pop();
 
     return get;
 }
@@ -28,4 +23,3 @@ console.log(arr.pop());
 console.log(arr.pop());
 console.log(arr.pop());
 console.log(arr.pop());
-
