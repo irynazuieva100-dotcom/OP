@@ -1,5 +1,5 @@
 function max(matrix) {
-    let m = -Infinity;
+    let m = matrix[0][0];
     for (const row of matrix) {
         for (const n of row) {
             if (n > m) m = n;
@@ -10,4 +10,3 @@ function max(matrix) {
 
 console.log(max([[1, 2, 3], [4, 5, 6], [7, 8, 9]]));
 console.log(max([[-8, -3], [-5, -1]]));
-
