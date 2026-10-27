@@ -14,4 +14,3 @@ console.log(numbers);
 const cities = ['Kiev', 'Beijing', 'Lima', 'Saratov'];
 removeElements(cities, 'Lima', 'Berlin', 'Kiev');
 console.log(cities);
-
