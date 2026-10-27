@@ -35,4 +35,3 @@ f.on('error', e => console.log(e.message));
 
 console.log(f(5));
 console.log(f(-5));
-
