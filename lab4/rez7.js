@@ -14,4 +14,3 @@ const persons = {
 };
 
 console.log(ages(persons));
-
