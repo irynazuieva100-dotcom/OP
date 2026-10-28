@@ -1,4 +1,4 @@
-function removeElement(array, item) {
+function rem(array, item) {
     const i = array.indexOf(item);
     if (i !== -1) {
         array.splice(i, 1);
@@ -6,10 +6,10 @@ function removeElement(array, item) {
 }
 
 const numbers = [1, 2, 3, 4, 5, 6, 7];
-removeElement(numbers, 5);
+rem(numbers, 5);
 console.log(numbers);
 
-const cities = ['Kiev', 'Beijing', 'Lima', 'Saratov'];
-removeElement(cities, 'Lima');
-removeElement(cities, 'Berlin');
+const cities = ['Kiev', 'Beijing', 'Lima', 'Shepetivka'];
+rem(cities, 'Lima');
+rem(cities, 'Berlin');
 console.log(cities);
