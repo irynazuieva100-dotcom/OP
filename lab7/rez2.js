@@ -1,4 +1,4 @@
-function removeElements(array, ...items) {
+function removeElement(array, ...items) {
     for (const item of items) {
         const i = array.indexOf(item);
         if (i!==-1) {
@@ -7,9 +7,9 @@ function removeElements(array, ...items) {
     }
 }
 const numbers = [1, 2, 3, 4, 5, 6, 7];
-removeElements(numbers, 5, 1, 6);
+removeElement(numbers, 5, 1, 6);
 console.log(numbers);
 
 const cities = ['Kiev', 'Beijing', 'Lima', 'Shepetivka'];
-removeElements(cities, 'Lima', 'Berlin', 'Kiev');
+removeElement(cities, 'Lima', 'Berlin', 'Kiev');
 console.log(cities);
