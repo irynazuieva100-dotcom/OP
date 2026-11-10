@@ -1,15 +1,14 @@
-function removeElement(array, ...items) {
-    for (const item of items) {
-        const i = array.indexOf(item);
-        if (i!==-1) {
-            array.splice(i, 1);
+function removeElements(array, ...items) {
+    items.forEach(item => {
+        const index = array.indexOf(item);
+        if (index !== -1) {
+            array.splice(index, 1);
         }
-    }
+    });
 }
 const numbers = [1, 2, 3, 4, 5, 6, 7];
-removeElement(numbers, 5, 1, 6);
+removeElements(numbers, 5, 1, 6);
 console.log(numbers);
-
 const cities = ['Kiev', 'Beijing', 'Lima', 'Shepetivka'];
-removeElement(cities, 'Lima', 'Berlin', 'Kiev');
+removeElements(cities, 'Lima', 'Berlin', 'Kiev');
 console.log(cities);
