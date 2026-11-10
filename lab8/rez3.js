@@ -6,6 +6,7 @@ function contract(fn, ...types) {
             if (typeof args[i] !== typeName) {
                 throw new TypeError('Wrong argument type');
             }
+        }
         const result = fn(...args);
         const resultType = types[types.length - 1].name.toLowerCase();
 
