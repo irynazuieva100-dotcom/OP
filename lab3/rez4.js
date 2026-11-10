@@ -12,8 +12,8 @@ const obj = {
 
 function intr(object) {
     return Object.keys(object)
-        .filter(key => typeof object[key] === 'function')
-        .map(key => [key, object[key].length]);
+      .filter(key => typeof object[key] === 'function')
+      .map(key => [key, object[key].length]);
 }
 
 console.log('Introspection:', intr(obj));
